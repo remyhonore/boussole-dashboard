@@ -1,0 +1,34 @@
+{
+  "title": "Boussole — Tableau de bord versions",
+  "last_update": "2026-02-05",
+  "mode_line": "Mode équipe: Rémy (décisions cliniques/humaines) + Assistant (produit/tech)",
+  "summary": {
+    "done": "V0.3.10 → V0.3.19",
+    "in_progress": "V0.3.20",
+    "next": "V0.3.21 → V0.3.23"
+  },
+  "kpis": [
+    { "label": "Objectif bêta", "value": "20–30", "sub": "testeurs / 14 jours" },
+    { "label": "Check-in cible", "value": "≤ 60 s", "sub": "" },
+    { "label": "Erreurs sécurité critiques", "value": "0", "sub": "" },
+    { "label": "Export PDF cible", "value": "≥ 60%", "sub": "" }
+  ],
+  "versions": [
+    { "version": "V0.3.10", "status": "✅", "summary": "Base régulation autonome / vagal" },
+    { "version": "V0.3.11", "status": "✅", "summary": "Release kit ChatGPT-first" },
+    { "version": "V0.3.12", "status": "✅", "summary": "Store-ready copy pack" },
+    { "version": "V0.3.13", "status": "✅", "summary": "Kit publication visuelle" },
+    { "version": "V0.3.14", "status": "✅", "summary": "Captures stores PNG" },
+    { "version": "V0.3.15", "status": "✅", "summary": "Impact patient + parcours errance" },
+    { "version": "V0.3.16", "status": "✅", "summary": "Écrans errance 1→5" },
+    { "version": "V0.3.17", "status": "✅", "summary": "Prototype + tests utilisateurs" },
+    { "version": "V0.3.18", "status": "✅", "summary": "Exécution terrain (templates/scoring/rapport)" },
+    { "version": "V0.3.19", "status": "✅", "summary": "Analyse auto GO/SOFT GO/NO-GO" },
+    { "version": "V0.3.20", "status": "🔄", "summary": "Build testable rapide (Android d’abord)" }
+  ],
+  "backlog": [
+    "V0.3.21 : durcissement sécurité + wording non diagnostique",
+    "V0.3.22 : simplification UX (charge cognitive basse)",
+    "V0.3.23 : PDF consultation optimisé cabinet"
+  ]
+}
