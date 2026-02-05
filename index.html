@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boussole — Tableau de bord versions</title>
+  <style>
+    body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; margin: 24px; color:#111; background:#f7f9fc; }
+    .card { background:#fff; border:1px solid #dde3ee; border-radius:14px; padding:16px 18px; margin-bottom:14px; }
+    h1 { margin:0 0 8px 0; font-size:28px; }
+    h2 { margin:0 0 8px 0; font-size:20px; }
+    .muted { color:#5a6472; }
+    .pill { display:inline-block; padding:4px 10px; border-radius:999px; font-size:13px; margin-right:8px; }
+    .done { background:#e8f7ee; color:#1c7d4d; }
+    .run { background:#e8f0ff; color:#2456cc; }
+    .next { background:#fff4e5; color:#b06505; }
+    table { width:100%; border-collapse: collapse; }
+    th, td { text-align:left; padding:10px; border-bottom:1px solid #eef2f8; font-size:14px; }
+    th { color:#425067; }
+    .kpi { font-size:28px; font-weight:700; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
+    .small { font-size: 13px; color:#6b7280; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Boussole — Tableau de bord versions</h1>
+    <div class="muted">Dernière mise à jour : <span id="last-update">2026-02-05</span></div>
+    <div style="margin-top:10px">
+      <span class="pill done">Terminé: V0.3.10 → V0.3.19</span>
+      <span class="pill run">En cours: V0.3.20</span>
+      <span class="pill next">Suivant: V0.3.21 → V0.3.23</span>
+    </div>
+    <p class="small">Mode équipe: Rémy (décisions cliniques/humaines) + Assistant (produit/tech)</p>
+  </div>
+
+  <div class="grid">
+    <div class="card"><div class="muted">Objectif bêta</div><div class="kpi">20–30</div><div class="muted">testeurs / 14 jours</div></div>
+    <div class="card"><div class="muted">Check-in cible</div><div class="kpi">≤ 60 s</div></div>
+    <div class="card"><div class="muted">Erreurs sécurité critiques</div><div class="kpi">0</div></div>
+    <div class="card"><div class="muted">Export PDF cible</div><div class="kpi">≥ 60%</div></div>
+  </div>
+
+  <div class="card">
+    <h2>Historique versions</h2>
+    <table>
+      <tr><th>Version</th><th>Statut</th><th>Résumé</th></tr>
+      <tr><td>V0.3.10</td><td>✅</td><td>Base régulation autonome / vagal</td></tr>
+      <tr><td>V0.3.11</td><td>✅</td><td>Release kit ChatGPT-first</td></tr>
+      <tr><td>V0.3.12</td><td>✅</td><td>Store-ready copy pack</td></tr>
+      <tr><td>V0.3.13</td><td>✅</td><td>Kit publication visuelle</td></tr>
+      <tr><td>V0.3.14</td><td>✅</td><td>Captures stores PNG</td></tr>
+      <tr><td>V0.3.15</td><td>✅</td><td>Impact patient + parcours errance</td></tr>
+      <tr><td>V0.3.16</td><td>✅</td><td>Écrans errance 1→5</td></tr>
+      <tr><td>V0.3.17</td><td>✅</td><td>Prototype + tests utilisateurs</td></tr>
+      <tr><td>V0.3.18</td><td>✅</td><td>Exécution terrain (templates/scoring/rapport)</td></tr>
+      <tr><td>V0.3.19</td><td>✅</td><td>Analyse auto GO/SOFT GO/NO-GO</td></tr>
+      <tr><td><b>V0.3.20</b></td><td>🔄</td><td>Build testable rapide (Android d’abord)</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Backlog court terme</h2>
+    <ul>
+      <li>V0.3.21 : durcissement sécurité + wording non diagnostique</li>
+      <li>V0.3.22 : simplification UX (charge cognitive basse)</li>
+      <li>V0.3.23 : PDF consultation optimisé cabinet</li>
+    </ul>
+  </div>
+</body>
+</html>
